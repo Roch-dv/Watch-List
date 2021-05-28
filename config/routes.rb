@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   # get '/lists/new', to: 'lists#new', as: :list_new
   # post '/lists', to: 'lists#create'
   # get '/lists/:id', to: 'lists#show', as: :list
+  root to: 'lists#index'
 
   resources :lists, except: %i[edit update] do
     resources :bookmarks, only: %i[new create]
