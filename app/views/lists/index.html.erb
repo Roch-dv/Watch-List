@@ -18,7 +18,7 @@
   </div>
   <div class="row">
     <% @lists.each do |list| %>
-      <div class="co-12 colsm-6 col-md-4">
+      <div class="co-12 colsm-6 col-md-4 grille">
         <%= link_to list_path(list), class:'text-decoration-none' do %>
           <div class="card-category" data-aos="zoom-in" style="background-color: white; color: grey; padding: 5px")">
             <%= list.name %>
